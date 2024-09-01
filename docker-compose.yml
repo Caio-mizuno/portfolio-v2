@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  # image project
+  portfolio :
+    build:
+      target: app-dev
+      context: .
+      args:
+        APP_BASE_DIR: ${APP_BASE_DIR-.}
+        COMPOSER_AUTH: "{}"
+      dockerfile: Dockerfile
+    platform: linux/x86_64
+    restart: unless-stopped
+    volumes:
+      - ./docker/supervisor/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+      - ${APP_BASE_DIR-.}:/app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - "3000:3000"
+
+  # nginx
+  web:
+    build:
+      context: .
+      target: web-dev
+      args:
+        APP_BASE_DIR: ${APP_BASE_DIR-.}
+    restart: unless-stopped
+    ports:
+      - "9561:8080"
+    volumes:
+      - ${APP_BASE_DIR-.}:/app/public
+      - ${APP_BASE_DIR-.}/docker/logs/nginx:/var/log/nginx
+    environment:
+      PHP_FPM_HOST: portfolio
+    deploy:
+      resources:
+        limits:
+          cpus: '0.75'
+          memory: 724M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    depends_on:
+      - portfolio

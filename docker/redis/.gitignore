@@ -1,0 +1,6 @@
+
+appendonlydir/*
+dump.rdb
+
+*
+!.gitignore
