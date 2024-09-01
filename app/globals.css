@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./css/app.css";
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19,18 +20,18 @@
 @layer base {
   :root {
     --radius: 0.5rem;
-    --color-primary: #060607;
+    --color-primary: #1c1c22;
     --color-primary-light: #1c1c22;
     --color-primary-dark: #1c1c22;
 
-    --color-secondary: #1c1c22;
-    --color-secondary-light: #1c1c22;
-    --color-secondary-dark: #1c1c22;
+    --color-secondary: #005672;
+    --color-secondary-light: #0089b5;
+    --color-secondary-dark: #080c4d;
 
-    --color-accent: #00ff99;
-    --color-accent-houver: #00e187;
-    --color-accent-light: #060607;
-    --color-accent-dark: #1c1c22;
+    --color-accent: #da9d00;
+    --color-accent-houver: #da9d00;
+    --color-accent-light: #da9d00;
+    --color-accent-dark: #da9d00;
 
     --color-neutral: #1c1c22;
     --color-neutral-light: #1c1c22;

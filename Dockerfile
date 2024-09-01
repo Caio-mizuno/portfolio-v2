@@ -26,6 +26,7 @@ RUN RUNTIME_DEPS="tini fcgi"; \
   apk add --no-cache --upgrade ${RUNTIME_DEPS} ${SECURITY_UPGRADES}
 
 # ---------------------------------------- Install / Enable PHP Extensions ---------------------------------------------
+RUN npm update -g npm
 
 RUN apk add --no-cache --virtual .build-deps \
   libzip-dev    \
@@ -96,7 +97,7 @@ RUN rm package-lock.json
 COPY package.json package-lock.json ./
 # Install next
 RUN npm install -g next
-
+# RUN yarn global add next
 # Install all dependencies
 RUN npm install 
 

@@ -24,16 +24,16 @@ module.exports = {
 					light: 'var(--color-primary-light)',
 					dark: 'var(--color-primary-dark)',
 				},
-				secondary: {
-					DEFAULT: 'var(--color-secondary)',
-					light: 'var(--color-secondary-light)',
-					dark: 'var(--color-secondary-dark)',
-				},
 				accent: {
 					DEFAULT: 'var(--color-accent)',
 					houver: 'var(--color-accent-hover)',
 					light: 'var(--color-accent-light)',
 					dark: 'var(--color-accent-dark)',
+				},
+				secondary: {
+					DEFAULT: 'var(--color-secondary)',
+					light: 'var(--color-secondary-light)',
+					dark: 'var(--color-secondary-dark)',
 				},
 				neutral: {
 					DEFAULT: 'var(--color-neutral)',
