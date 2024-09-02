@@ -4,16 +4,8 @@ import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
-import Image from "next/image";
+import links from '@/components/utils/links';
 
-const links = [
-  { name: "home", path: "/" },
-  { name: "services", path: "/services" },
-  { name: "resume", path: "/resume" },
-  { name: "work", path: "/work" },
-  { name: "contact", path: "/contact" },
-];
 
 const MobileNav = () => {
   const pathname = usePathname();

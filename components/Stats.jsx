@@ -4,11 +4,11 @@ import CountUp from "react-countup";
 
 const stats = [
   { number: new Date().getFullYear() - 2021, text: "Anos de experiência" },
-  { number: 8, text: "Projetos entregues" },
+  { number: 9, text: "Projetos completos" },
   // nest,next,laravel,vue,uipath,mysql,oracledb,postgresql,codeigniter,powerBi,python
   { number: 11, text: "Tecnologias" },
   // front-end, back-end, automação, BI
-  { number: 4, text: "Diversidade de atuações" },
+  { number: 5, text: "Diversidade de atuações" },
   // rede social, e-commerce, dashboard, app de mobilidade, app de crédito, app de saúde, app de gestão de ponto, sistema de antecipações, app de recarga de onibus
   { number: 9, text: "Tipos de aplicações" },
 ];

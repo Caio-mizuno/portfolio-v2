@@ -20,9 +20,9 @@
 @layer base {
   :root {
     --radius: 0.5rem;
-    --color-primary: #1c1c22;
-    --color-primary-light: #1c1c22;
-    --color-primary-dark: #1c1c22;
+    --color-primary: #1c1b22;
+    --color-primary-light: #1c1b22;
+    --color-primary-dark: #1c1b22;
 
     --color-secondary: #005672;
     --color-secondary-hover: #052f3d;
@@ -52,6 +52,12 @@
   }
   .h3{
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #da9d00;
   }
 
 }
