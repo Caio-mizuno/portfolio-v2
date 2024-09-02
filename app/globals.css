@@ -25,6 +25,7 @@
     --color-primary-dark: #1c1c22;
 
     --color-secondary: #005672;
+    --color-secondary-hover: #052f3d;
     --color-secondary-light: #0089b5;
     --color-secondary-dark: #080c4d;
 
@@ -42,4 +43,15 @@
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
+
+  .h1{
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2{
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3{
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
 }

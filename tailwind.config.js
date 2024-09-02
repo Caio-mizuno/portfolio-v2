@@ -32,6 +32,7 @@ module.exports = {
 				},
 				secondary: {
 					DEFAULT: 'var(--color-secondary)',
+					hover: 'var(--color-secondary-hover)',
 					light: 'var(--color-secondary-light)',
 					dark: 'var(--color-secondary-dark)',
 				},

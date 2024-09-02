@@ -9,7 +9,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="py-8 xl:py-12 text-white ">
       <div className="container mx-auto flex justify-between items-center">
         <div className="inline-flex justify-between content-center">
           <div className="w-[110px]">
@@ -35,7 +35,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
-            <Button className="text-accent">Hire me</Button>
+            <Button >Hire me</Button>
           </Link>
         </div>
         {/* mobile nav */}

@@ -23,7 +23,7 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent>
-        <div className="w-full flex  mt-20">
+        <div className="w-full flex  mt-4">
           <div className="w-[100px] h-[100px] inline-flex justify-between items-center">
             <div className="mr-2 ml-20">
               <Link href="/">
@@ -40,7 +40,7 @@ const MobileNav = () => {
           {/* {Logo} */}
           {links.map((link, index) => {
             return (
-              <div key={index} className="my-10 text-center text-2xl">
+              <div key={index} className="my-4 text-center text-2xl">
                 <Link
                   key={index}
                   href={link.path}
