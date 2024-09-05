@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/Ui/sheet";
 import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
-import links from '@/components/utils/links';
+import links from '@/components/Utils/Links';
 
 
 const MobileNav = () => {

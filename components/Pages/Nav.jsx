@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import links from '@/components/utils/links';
+import links from '@/components/Utils/Links';
 // const links = [
 //   { name: "home", path: "/" },
 //   { name: "atuações", path: "/services" },

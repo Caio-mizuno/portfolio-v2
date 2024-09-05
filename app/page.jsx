@@ -1,7 +1,7 @@
-import Photo from "@/components/Photo";
-import Social from "@/components/Social";
-import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
+import Photo from "@/components/Pages/Photo";
+import Social from "@/components/Pages/Social";
+import Stats from "@/components/Pages/Stats";
+import { Button } from "@/components/Ui/button";
 import { FiDownload } from "react-icons/fi";
 // Variables
 const idiome = process.env.REACT_APP_IDIOME;

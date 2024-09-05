@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../Ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from "@/components/Ui/aspect-ratio";
 // components
 
 const Header = () => {

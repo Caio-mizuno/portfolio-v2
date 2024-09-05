@@ -1,0 +1,122 @@
+const education = {
+  icon: "/assets/resume/cap.svg",
+  title: "Formação Acadêmica",
+  description: "Minhas formações e certificações",
+  items: [
+    {
+      institution: "FullCycle",
+      degree: "MBA - Arquitetura de Software",
+      duration: "2023 - 2025",
+      href: "",
+    },
+    {
+      institution: "Alura",
+      degree: "Docker: Criando e Gerenciando Containers",
+      duration: "2023",
+      href: "https://cursos.alura.com.br/certificate/f08738b6-b1a4-4918-8e6e-b0a1f31f06f8",
+    },
+    {
+      institution: "Alura",
+      degree: "JavaScript: Arrays",
+      duration: "2023",
+      href: "https://cursos.alura.com.br/certificate/e1b94ef3-9d0d-4e2f-b56c-d5b362f51c76",
+    },
+    {
+      institution: "Alura",
+      degree: "JavaScript: tipos, variáveis e funções",
+      duration: "2023",
+      href: "https://cursos.alura.com.br/certificate/7a4baad4-6a7f-4b02-a6e3-53220dfb834e",
+    },
+    {
+      institution: "Coodesh",
+      degree: "PHP",
+      duration: "2023",
+      href: "https://coodesh.com/share/certificate/c061eee0-95bb-11ed-9234-af852ff9d8a1",
+    },
+    {
+      institution: "Alura",
+      degree: "MVC com PHP: Entenda o padrão Model-View-Controller",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/455a27e0-5b9d-440a-bc5d-3e6ea4289885",
+    },
+    {
+      institution: "Alura",
+      degree: "Python para Data Science",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/1c5fa77c-841b-43b2-ab6c-c7a80a781731",
+    },
+    {
+      institution: "Alura",
+      degree: "Dashboard com Power BI: Visualizando dados",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/0ac4a0d9-8bcd-4175-a14a-37615fa16328",
+    },
+    {
+      institution: "Alura",
+      degree: "Formação Power BI",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/degree/certificate/0b61d73d-0df3-4742-ade9-9b8ad506563c",
+    },
+    {
+      institution: "Alura",
+      degree: "Power BI Desktop: Construindo meu primeiro dashboard",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/d1baf3f7-7fe4-4e51-8129-7eb81b90e4dc",
+    },
+    {
+      institution: "Alura",
+      degree: "Avançando com PHP: Arrays, Strings, Função e Web",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/58397cd9-e4f4-4307-a812-69968f9a2bb2",
+    },
+    {
+      institution: "Alura",
+      degree: "Introdução ao PHP: Primeiros passos com a linguagem",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/24de2cbd-9198-4000-b3c0-5929f9449244",
+    },
+    {
+      institution: "Alura",
+      degree: "Php Composer: Dependências, Autoload e Publicação",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/3810026e-99c4-4862-bc40-20d3422ef5ff",
+    },
+    {
+      institution: "Alura",
+      degree: "VUE.JS parte 1: Construindo Single Page Applications",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/cb907932-1399-4dc4-8b97-33c38dcfbfd2",
+    },
+    {
+      institution: "Alura",
+      degree: "C# parte 1: Primeiros passos",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/a18a7a76-5553-4e41-bbc8-883c14bd5080",
+    },
+    {
+      institution: "Alura",
+      degree: "C# parte 2: Introdução à Orientação a Objetos",
+      duration: "2022",
+      href: "https://cursos.alura.com.br/certificate/2cb81970-6731-42f8-afd3-c69b88c21aa5",
+    },
+    {
+      institution: "UFGD - Universidade Federal da Grande Dourados",
+      degree: "Engenharia da Computação",
+      duration: "2016 - 2021",
+      href: "",
+    },
+    {
+      institution: "TIMTech - Instituto TIM",
+      degree: "Curso básico - UX/UI Design",
+      duration: "2021",
+      href: "",
+    },
+    {
+      institution: "KULTIVI",
+      degree: "Curso básico - Oratória de alta performance",
+      duration: "2021",
+      href: "",
+    },
+  ],
+};
+export default education;
