@@ -8,13 +8,6 @@ import Skills from "@/components/Pages/Resume/Skills";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/Ui/tabs";
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/Ui/tooltip";
-
 import { ScrollArea } from "@/components/Ui/scroll-area";
 import { motion } from "framer-motion";
 
@@ -43,11 +36,26 @@ const Resume = () => {
 
           {/* content */}
           <div className="min-h-[70vh] w-full">
-            <TabsContent value="experience" className="w-full"> <Experiences /></TabsContent>
-            <TabsContent value="freelas" className="w-full"> <Freelas /></TabsContent>
-            <TabsContent value="educations" className="w-full"> <Educations /></TabsContent>
-            <TabsContent value="skills" className="w-full"> <Skills /></TabsContent>
-            <TabsContent value="about" className="w-full"> <About /></TabsContent>
+              <TabsContent value="experience" className="w-full">
+                {" "}
+                <Experiences />
+              </TabsContent>
+              <TabsContent value="freelas" className="w-full">
+                {" "}
+                <Freelas />
+              </TabsContent>
+              <TabsContent value="educations" className="w-full">
+                {" "}
+                <Educations />
+              </TabsContent>
+              <TabsContent value="skills" className="w-full">
+                {" "}
+                <Skills />
+              </TabsContent>
+              <TabsContent value="about" className="w-full">
+                {" "}
+                <About />
+              </TabsContent>
           </div>
         </Tabs>
       </div>

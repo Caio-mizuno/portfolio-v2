@@ -15,10 +15,10 @@ const Nav = () => {
   const pathname = usePathname();
   return (
     <nav className="flex gap-8 ">
-      {links.map((link, index) => {
+      {links.map((link, navIndex) => {
         return (
           <Link
-            key={index}
+            key={navIndex}
             href={link.path}
             className={`${
               link.path === pathname && "text-accent border-b-2 border-accent"

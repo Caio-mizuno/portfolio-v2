@@ -9,7 +9,6 @@ const Experiences = () => {
         {experiences.description}
       </p>
 
-      <ScrollArea className="h-[400px]">
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
           {experiences.items.map((item, index) => {
             return (
@@ -48,7 +47,6 @@ const Experiences = () => {
             );
           })}
         </ul>
-      </ScrollArea>
     </div>
   );
 };

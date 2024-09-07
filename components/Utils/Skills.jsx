@@ -4,6 +4,9 @@ import {
   FaVuejs,
   FaDocker,
   FaPython,
+  FaWordpress,
+  FaJs,
+  FaHtml5,
 } from "react-icons/fa";
 import {
   SiNestjs,
@@ -14,6 +17,9 @@ import {
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { GrOracle } from "react-icons/gr";
+import { MdCss } from "react-icons/md";
+import { FaJ } from "react-icons/fa6";
+
 
 const docker = {
   icon: <FaDocker />,
@@ -27,17 +33,17 @@ const laravel = {
 
 const vue = {
   icon: <FaVuejs />,
-  name: "VUE",
+  name: "Vue.js",
 };
 
 const next = {
   icon: <RiNextjsFill />,
-  name: "Next",
+  name: "Next.js",
 };
 
 const nest = {
   icon: <SiNestjs />,
-  name: "Nest",
+  name: "Nest.js",
 };
 
 const php = {
@@ -75,10 +81,30 @@ const figma = {
   name: "Figma",
 };
 
+const wordpress = {
+  icon: <FaWordpress />,
+  name: "Wordpress",
+};
+
+const js = {
+  icon: <FaJs />,
+  name: "JavaScript",
+};
+
+const html = {
+  icon: <FaHtml5 />,
+  name: "Html",
+};
+
+const css = {
+  icon: <MdCss />,
+  name: "Css",
+};
+
 const skills = {
   icon: "/assets/resume/cap.svg",
-  title: "Formação Acadêmica",
-  description: "Minhas formações e certificações",
+  title: "Habilidades técnicas",
+  description: "Minhas habilidades técnicas e a experiência prática adquirida ao longo da minha carreira. Abordarei as ferramentas, linguagens de programação e metodologias que domino, demonstrando como essas competências contribuem para a entrega de projetos de alta qualidade.",
   items: [
     docker,
     laravel,
@@ -91,6 +117,7 @@ const skills = {
     oracle,
     mysql,
     postgresql,
+    wordpress,
     figma,
   ],
 };

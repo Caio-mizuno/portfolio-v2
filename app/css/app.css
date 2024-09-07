@@ -12,3 +12,6 @@
     );
 }
 
+.filter-shadow{
+    filter: drop-shadow(4px 2px 2px #005672);
+}
