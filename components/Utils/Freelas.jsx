@@ -5,7 +5,11 @@ const freela = {
   items: [
     {
       project: "Hermes",
-      description: "Sistema de Gestão de Vendas",
+      description: "Sistema de gestão de vendas com lançamento de produtos e serviços, mais funil de vendas.",
+    },
+    {
+      project: "Samulife",
+      description: "Sistema de gestão na área da saúde com o foco no auxílio do controle de pacientes nos ambientes hospitalares.",
     },
   ],
 };

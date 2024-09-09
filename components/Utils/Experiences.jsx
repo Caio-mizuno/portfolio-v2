@@ -5,7 +5,7 @@ const experience = {
   items: [
     {
       company: "ME2 Software",
-      position: "Squad Leader - Desenvolvedor Fullstack/Backend",
+      position: "Squad Leader",
       duration: "2023 - " + new Date().getFullYear(),
       projects: [
         {

@@ -40,7 +40,10 @@ const Work = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 , transition:{delay:2.4, duration:0.4,ease:"easeInOut"}}}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
+      }}
       className="min-h-[80vh] flex flex-col  justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -48,37 +51,36 @@ const Work = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col gap-6 xl:justify-between order-2 xl:order-none">
             {/* content */}
             <div className="flex flex-col gap-[30px] h-[50%]">
-              <div className="w-full flex justify-end">
-                <Link href={project.href}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Visitar</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-              </div>
-
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <div className="text-6xl leading-none font-extrabold text-transparent text-outline">
                 {project.title}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-accent group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category}
-                <br />
+                {"  "}
                 <span className="text-[18px] font-bold leading-none text-secondary group-hover:text-accent transition-all duration-500 capitalize">
                   {project.position}
                 </span>
               </h2>
 
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60 xl:w-[98%]">{project.description}</p>
               <div className="border border-white/20"></div>
 
               <ul className="w-full flex flex-row gap-2 max-w-[300px]">
+                <div className="w-full flex justify-end">
+                  <Link href={project.href}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Visitar</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                </div>
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="w-full">
@@ -116,9 +118,12 @@ const Work = () => {
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image
+                          alt="projeto"
                           src={project.image}
-                            fill
+                          fill
                           className=""
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+                          priority
                         />
                       </div>
                     </div>

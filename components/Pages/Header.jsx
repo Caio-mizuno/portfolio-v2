@@ -20,6 +20,7 @@ const Header = () => {
                 className="rounded-md object-cover"
                 width="350"
                 height="350"
+                priority
               />
             </AspectRatio>
           </div>

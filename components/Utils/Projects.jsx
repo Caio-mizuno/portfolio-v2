@@ -113,7 +113,7 @@ const projects = [
     position: "Squad Leader",
     href: "https://play.google.com/store/apps/details?id=br.com.libercard.libercard&hl=pt",
     description:
-      "Aplicativo oficial para os usuários dos cartões Libercard. Com ele você tem muito mais facilidades como desbloqueio e bloqueio de cartões, recarga de celular, acesso ao app através de sua digital, consulta de saldo, fatura, extrato, gráfico de consumo por ramo de atividade, relação de estabelecimentos credenciados, pagamento de conta Enel, a qualquer hora e onde você estiver.",
+      "Aplicativo para os usuários dos cartões Libercard realizarem transações financeira, como pagamento de contas, recarga de celular e muito mais.",
     stack: [docker, laravel, oracle],
   },
   {
@@ -123,7 +123,7 @@ const projects = [
     href: "https://play.google.com/store/apps/details?id=br.com.libercard.vt&hl=pt",
     position: "Squad Leader",
     description:
-      "Aplicativo destinado à compra de créditos de transporte para os usuários de Fortaleza/CE e região metropolitana. A comodidade do nosso serviço traz mais liberdade para o seu dia a dia, facilitando sua compra de créditos sem sair de casa. O pagamento pode ser feito por cartão de crédito e PIX. Nele, além de comprar crédito para o cartão vale transporte, você compra créditos para a geração de QR Code.",
+      "Aplicativo destinado à compra de créditos de transporte para os usuários de Fortaleza/CE e região metropolitana. ",
     stack: [docker, laravel, oracle],
   },
   {
@@ -133,7 +133,7 @@ const projects = [
     href: "https://play.google.com/store/apps/details?id=br.com.libercard.vt&hl=pt",
     position: "Software Engineer Sr.",
     description:
-      "Sistema de gestão de saúde com o foco no auxílio do controle de pacientes nos ambientes hospitalares. O sistema tem módulo de atendimento, prontuário, prescrição, evolução, exames, agendamento, relatórios e controle de estoque.",
+      "Sistema de gestão na área da saúde com o foco no auxílio do controle de pacientes nos ambientes hospitalares. O sistema tem módulo de atendimento, prontuário, prescrição, evolução, exames, agendamento, relatórios e controle de estoque.",
     stack: [laravel, vue, mysql],
   },
   {
@@ -148,7 +148,7 @@ const projects = [
   },
   {
     category: "Fullstack",
-    title: "Moove app - Motorista e Passageiro",
+    title: "Moove app",
     image: "/assets/work/moove.png",
     href: "https://play.google.com/store/apps/details?id=com.innyx.moovecoin.driver&hl=pt",
     position: "Software Developer Jr.",
