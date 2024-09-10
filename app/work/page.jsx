@@ -12,18 +12,6 @@ import "swiper/css/scrollbar";
 
 import "swiper/css";
 import projects from "@/components/Utils/Projects";
-import {
-  docker,
-  laravel,
-  vue,
-  php,
-  oracle,
-  mysql,
-  js,
-  html,
-  css,
-  wordpress,
-} from "@/components/Utils/Skills";
 
 import { BsArrowUpRight } from "react-icons/bs";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
@@ -72,9 +60,9 @@ const Work = () => {
         <div className="flex flex-col xl:flex-row">
           <div className="w-full xl:w-[50%]  flex flex-col gap-6 xl:justify-between order-2 xl:order-none ">
             {/* content */}
-            <div className="flex flex-col gap-6 h-[50%] lg:text-justify text-center justify-center mt-16">
+            <div className="flex flex-col gap-6 h-[300px] lg:text-justify text-center justify-center mt-20">
               {/* outline num */}
-              <div className="text-6xl leading-none font-extrabold text-transparent text-outline">
+              <div className="text-5xl leading-none font-extrabold text-transparent text-outline xl:w-[90%]">
                 {project.title}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-accent group-hover:text-accent transition-all duration-500 capitalize">
@@ -88,7 +76,7 @@ const Work = () => {
               <p className="text-white/60 xl:w-[98%]">{project.description}</p>
               <div className="border border-white/20"></div>
 
-              <ul className="w-full flex flex-row gap-2 max-w-[300px] ">
+              <ul className="w-full flex flex-row gap-2 max-w-[300px]">
                 <div className="w-full flex justify-end">
                   <Link href={project.href}>
                     <TooltipProvider delayDuration={100}>
