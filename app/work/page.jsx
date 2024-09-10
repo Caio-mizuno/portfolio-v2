@@ -2,7 +2,7 @@
 
 import { delay, motion } from "framer-motion";
 import React, { useState } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
@@ -25,7 +25,7 @@ import {
   wordpress,
 } from "@/components/Utils/Skills";
 
-import { BsArrowDownRight, BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 
 import {
@@ -79,7 +79,7 @@ const Work = () => {
               </div>
               <h2 className="text-[42px] font-bold leading-none text-accent group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category}
-                {"  "}
+                <br />
                 <span className="text-[18px] font-bold leading-none text-secondary group-hover:text-accent transition-all duration-500 capitalize">
                   {project.position}
                 </span>

@@ -131,7 +131,7 @@ const projects = [
     title: "Samulife",
     image: "/assets/work/samulife.png",
     href: "https://play.google.com/store/apps/details?id=br.com.libercard.vt&hl=pt",
-    position: "Software Engineer Sr.",
+    position: "Software Engineer",
     description:
       "Sistema de gestão na área da saúde com o foco no auxílio do controle de pacientes nos ambientes hospitalares. O sistema tem módulo de atendimento, prontuário, prescrição, evolução, exames, agendamento, relatórios e controle de estoque.",
     stack: [laravel, vue, mysql],

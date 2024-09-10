@@ -33,7 +33,7 @@ const experience = {
         },
         {
           title: "Swing360",
-          description: "Sistema de Cartões Vale Transporte",
+          description: "Rede Social",
         },
         {
           title: "Samulife",
