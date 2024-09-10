@@ -29,7 +29,7 @@ const Educations = () => {
                 <div className="text-accent w-full">{item.duration}</div>
                   <div
                   onClick={() => handleDownload(item)}
-                  className="-rotate-90 hover:rotate-0 hover:text-accent hover:transition-all w-[40px] h-[40px] text-4xl">
+                  className="-rotate-90 hover:rotate-0 hover:text-accent hover:transition-all transition-transform w-[40px] h-[40px] text-4xl">
                     {item.href!=""?<HiOutlineDownload />:''}
                   </div>
                 </span>
