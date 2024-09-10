@@ -12,6 +12,35 @@
     );
 }
 
-.filter-shadow{
+.filter-shadow {
     filter: drop-shadow(4px 2px 2px #005672);
+}
+
+@keyframes moveXleft {
+    0% {
+        transform: translateX(-30px); /* Posição inicial em x = -10 */
+    }
+    100% {
+        transform: translateX(0px); /* Posição final em x = 10 */
+    }
+}
+@keyframes moveXright {
+    0% {
+        transform: translateX(30px); /* Posição inicial em x = -10 */
+    }
+    100% {
+        transform: translateX(0px); /* Posição final em x = 10 */
+    }
+}
+
+.moving-div-left {
+    width: auto;
+    height: auto;
+    animation: moveXleft 6s cubic-bezier(1, -0.54, 0.34, 0.85) infinite alternate;
+}
+/* Aplica a animação na div */
+.moving-div-right {
+    width: auto;
+    height: auto;
+    animation: moveXright 6s cubic-bezier(1, -0.54, 0.34, 0.85) infinite alternate;
 }
