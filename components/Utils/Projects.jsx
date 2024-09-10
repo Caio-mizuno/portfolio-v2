@@ -114,7 +114,7 @@ const projects = [
     href: "https://play.google.com/store/apps/details?id=br.com.libercard.libercard&hl=pt",
     description:
       "Aplicativo para os usuários dos cartões Libercard realizarem transações financeira, como pagamento de contas, recarga de celular e muito mais.",
-    stack: [docker, laravel, oracle],
+    stack: [],
   },
   {
     category: "Backend",
@@ -124,7 +124,7 @@ const projects = [
     position: "Squad Leader",
     description:
       "Aplicativo destinado à compra de créditos de transporte para os usuários de Fortaleza/CE e região metropolitana. ",
-    stack: [docker, laravel, oracle],
+    stack: [],
   },
   {
     category: "Fullstack",
