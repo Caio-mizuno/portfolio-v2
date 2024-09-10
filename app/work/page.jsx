@@ -54,11 +54,11 @@ const Work = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
       }}
-      className="min-h-[100vh] flex flex-col  justify-center py-12 xl:px-0"
+      className="min-h-[50vh] flex flex-col  justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto swiper">
         <div className="flex flex-col xl:flex-row">
-          <div className="w-full xl:w-[50%]  flex flex-col gap-6 xl:justify-between order-2 xl:order-none ">
+          <div className="w-full xl:w-[50%] min-h-[438px] flex flex-col gap-6 xl:justify-between order-2 xl:order-none ">
             {/* content */}
             <div className="flex flex-col gap-6 h-[300px] lg:text-justify text-center justify-center mt-20">
               {/* outline num */}
