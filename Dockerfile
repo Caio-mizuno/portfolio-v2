@@ -97,9 +97,9 @@ RUN rm package-lock.json
 COPY package.json package-lock.json ./
 # Install next
 RUN npm install -g next
-# RUN yarn global add next
+RUN yarn global add next
 # Install all dependencies
-RUN npm install 
+RUN yarn install 
 
 
 COPY docker/supervisor/supervisord.conf \
