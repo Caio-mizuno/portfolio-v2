@@ -11,6 +11,10 @@ const freela = {
       project: "Samulife",
       description: "Sistema de gestão na área da saúde com o foco no auxílio do controle de pacientes nos ambientes hospitalares.",
     },
+    {
+      project: "Sis. Saúde",
+      description: "Sistema de gestão na área da saúde com o foco na triagem de pacientes nos postos de saúde.",
+    },
   ],
 };
 export default freela;

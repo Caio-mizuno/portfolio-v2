@@ -2,22 +2,24 @@
 import Axios from "axios";
 const WebSocketPage = () => {
   const environment = {
+    // wsHost: "localhost:9901",
+    // apiUrl: "http://localhost:9902",
+    
     // wsHost: "10.182.2.2:9901",
-    wsHost: "localhost:9901",
-    // wsHost: "ws1t.libercard.com.br",
-    // apiUrl: "http://10.182.2.2:8081",
-    apiUrl: "http://localhost:9902",
-    // apiUrl: "https://ws2t.libercard.com.br",
-    wsURL: "localhost",
+    // apiUrl: "http://10.182.2.2:9902",
+    
+    apiUrl: "ws1t.libercard.com.br",
+    wsHost: "https://ws2t.libercard.com.br",
+    // wsURL: "localhost",
     key: "3f5dab41191929ee642d",
   };
   const socket = new WebSocket(
-    `ws://${environment.wsHost}/app/${environment.key}`
+    `wss://${environment.wsHost}/app/${environment.key}`
   );
   const channel = "recharge";
-  const channelId = ".5904";
+  const channelId = ".6239";
   const token =
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwODEvdjIvYXV0aC0ydXNlciIsImlhdCI6MTcyOTY5NTU5OCwiZXhwIjoxNzMwMjk1NTk4LCJuYmYiOjE3Mjk2OTU1OTgsImp0aSI6IlVadzZLSVhYb1k0N2p6d2ciLCJzdWIiOiIzNTE5MDMiLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4IiwiY3BmIjoiNzAzMTE2NDkxNTciLCJub21lIjoiQ0FJTyBURVNURSIsImRhdGFfbG9naW5fZXhwaXJhIjoiMjAyNC0xMC0yMyAxMTo1OTo1NyIsImlkX2Rpc3Bvc2l0aXZvIjoiMTIiLCJyZXF1ZXN0X3R5cGUiOiJhY2Nlc3NfdG9rZW4ifQ.C6C0n6o3_-wEcM6sSoft3EiMCrtZJKBHfAEGOMQ903Y";
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwODEvdjIvYXV0aC0ydXNlciIsImlhdCI6MTcyOTg2MDE1MCwiZXhwIjoxNzMwNDYwMTUwLCJuYmYiOjE3Mjk4NjAxNTAsImp0aSI6InU5UmRHOTBtM0ViMm5rQU8iLCJzdWIiOiIzNTE5MDMiLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4IiwiY3BmIjoiNzAzMTE2NDkxNTciLCJub21lIjoiQ0FJTyBURVNURSIsImRhdGFfbG9naW5fZXhwaXJhIjoiMjAyNC0xMC0yNSAwOTo0MjoyOSIsImlkX2Rpc3Bvc2l0aXZvIjoiMTIiLCJyZXF1ZXN0X3R5cGUiOiJhY2Nlc3NfdG9rZW4ifQ.buXJBRf3lLQChB0WYsQt-4C2XgKss-yhU7BdOgAb-EE";
   socket.addEventListener("open", function (event) {
     console.log("WebSocket is open now.");
   });
