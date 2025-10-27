@@ -1,3 +1,5 @@
+"use client";
+
 import Photo from "@/components/Pages/Photo";
 import Social from "@/components/Pages/Social";
 import Stats from "@/components/Pages/Stats";
@@ -10,6 +12,15 @@ const downloadButton =
   idiome === "pt" || idiome == "" ? " Baixar currículo " : " Download resume ";
 
 const Home = () => {
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/Resume.pdf';
+    link.download = 'Caio_Mizuno_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -35,6 +46,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownloadResume}
               >
                 <span>{downloadButton}</span>
                 <FiDownload className="text-xl" />
