@@ -25,7 +25,7 @@ const experience = {
     {
       company: "Innyx",
       position: "Desenvolvedor",
-      duration: "2023 - " + new Date().getFullYear(),
+      duration: "2023 - 2025",
       projects: [
         {
           title: "Moove",
