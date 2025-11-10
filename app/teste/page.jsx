@@ -5,13 +5,13 @@ const WebSocketPage = () => {
     // wsHost: "localhost:9901",
     // apiUrl: "http://localhost:9902",
     
-    // wsHost: "10.182.2.2:9901",
-    // apiUrl: "http://10.182.2.2:9902",
+    // wsHost: "-:9901",
+    // apiUrl: "http://-:9902",
     
-    apiUrl: "ws1t.libercard.com.br",
-    wsHost: "https://ws2t.libercard.com.br",
+    apiUrl: "-",
+    wsHost: "-",
     // wsURL: "localhost",
-    key: "3f5dab41191929ee642d",
+    key: "-",
   };
   const socket = new WebSocket(
     `wss://${environment.wsHost}/app/${environment.key}`
@@ -19,7 +19,7 @@ const WebSocketPage = () => {
   const channel = "recharge";
   const channelId = ".6239";
   const token =
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwODEvdjIvYXV0aC0ydXNlciIsImlhdCI6MTcyOTg2MDE1MCwiZXhwIjoxNzMwNDYwMTUwLCJuYmYiOjE3Mjk4NjAxNTAsImp0aSI6InU5UmRHOTBtM0ViMm5rQU8iLCJzdWIiOiIzNTE5MDMiLCJwcnYiOiJiOTEyNzk5NzhmMTFhYTdiYzU2NzA0ODdmZmYwMWUyMjgyNTNmZTQ4IiwiY3BmIjoiNzAzMTE2NDkxNTciLCJub21lIjoiQ0FJTyBURVNURSIsImRhdGFfbG9naW5fZXhwaXJhIjoiMjAyNC0xMC0yNSAwOTo0MjoyOSIsImlkX2Rpc3Bvc2l0aXZvIjoiMTIiLCJyZXF1ZXN0X3R5cGUiOiJhY2Nlc3NfdG9rZW4ifQ.buXJBRf3lLQChB0WYsQt-4C2XgKss-yhU7BdOgAb-EE";
+    "-.-.-------";
   socket.addEventListener("open", function (event) {
     console.log("WebSocket is open now.");
   });
