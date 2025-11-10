@@ -23,25 +23,6 @@ const experience = {
       ],
     },
     {
-      company: "Innyx",
-      position: "Desenvolvedor",
-      duration: "2023 - 2025",
-      projects: [
-        {
-          title: "Moove",
-          description: "Sistema de Mobilidade Urbana",
-        },
-        {
-          title: "PluralPlus",
-          description: "Sistema de apoio educacional",
-        },
-        {
-          title: "Edux.me",
-          description: "Sistema de apoio educacional",
-        },
-      ],
-    },
-    {
       company: "Encode",
       position: "Fullstack Developer",
       duration: "2022 - 2023",
