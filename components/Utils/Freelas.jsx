@@ -22,6 +22,11 @@ const freela = {
     {
       project: "Sistema educacional - PRODAM",
       description: "Sistema de gestão na área da educação com o foco no controle de alunos, professores e turmas do estado do Amazonas. (Innyx)",
+    },
+    ,
+    {
+      project: "Automação de Propagandas",
+      description: "Script criado com python para automatizar as propagandas em um estabelecimento.",
     }
   ],
 };
