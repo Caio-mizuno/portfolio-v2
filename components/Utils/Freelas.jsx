@@ -14,6 +14,14 @@ const freela = {
     {
       project: "Sis. Saúde",
       description: "Sistema de gestão na área da saúde com o foco na triagem de pacientes nos postos de saúde.",
+    },
+    {
+      project: "Trans. Saúde",
+      description: "Sistema de gestão na área da saúde com o foco no controle de frotas de veículos ambulatóriais nos postos de saúde.",
+    },
+    {
+      project: "Sistema educacional - PRODAM",
+      description: "Sistema de gestão na área da educação com o foco no controle de alunos, professores e turmas do estado do Amazonas. (Innyx)",
     }
   ],
 };
