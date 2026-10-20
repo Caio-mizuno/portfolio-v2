@@ -4,9 +4,24 @@ const experience = {
   description: "A seção a seguir apresenta minhas experiências profissionais, destacando as principais atividades e responsabilidades que assumi ao longo da minha trajetória.",
   items: [
     {
+      company: "EZ Softwares",
+      position: "Desenvolvedor Full Stack",
+      duration: "2026 - atual",
+      projects: [
+        {
+          title: "EzChat",
+          description: "Atendimento automatizado com IA no WhatsApp e outros canais",
+        },
+        {
+          title: "Automações modulares",
+          description: "Ferramentas de atendimento em Next + Laravel",
+        },
+      ],
+    },
+    {
       company: "ME2 Software",
       position: "Squad Leader",
-      duration: "2023 - " + new Date().getFullYear(),
+      duration: "2023 - atual",
       projects: [
         {
           title: "Libercard",
@@ -51,8 +66,31 @@ const experience = {
       duration: "2021 - 2022",
       projects: [
         {
-          title: "Analise de Crédito",
+          title: "Análise de Crédito",
           description: "Sistema Financeiro",
+        },
+        {
+          title: "Automações RPA",
+          description: "UiPath (C# e VB)",
+        },
+        {
+          title: "Business Intelligence",
+          description: "Dashboards em Power BI",
+        },
+      ],
+    },
+    {
+      company: "Prefeitura de Dourados",
+      position: "Estagiário de Desenvolvimento",
+      duration: "2021",
+      projects: [
+        {
+          title: "Festival Gastronômico",
+          description: "Website em WordPress",
+        },
+        {
+          title: "Portal da Cultura",
+          description: "Site institucional",
         },
       ],
     },

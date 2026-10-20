@@ -6,10 +6,11 @@ import Stats from "@/components/Pages/Stats";
 import { Button } from "@/components/Ui/button";
 import { FiDownload } from "react-icons/fi";
 // Variables
+import Link from "next/link";
 const idiome = process.env.REACT_APP_IDIOME;
-const title = idiome === "pt" || idiome == "" ? "Olá, eu sou" : "Hello, I'm";
+const title = idiome === "pt" || !idiome ? "Olá, eu sou" : "Hello, I'm";
 const downloadButton =
-  idiome === "pt" || idiome == "" ? " Baixar currículo " : " Download resume ";
+  idiome === "pt" || !idiome ? " Baixar currículo " : " Download resume ";
 
 const Home = () => {
   const handleDownloadResume = () => {
@@ -27,19 +28,25 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:py-8 xl:pb-24">
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Engineer</span>
+            <span className="text-xl">Squad Leader · Software Engineer</span>
             <h1 className="h1">
               {title}
               <br />
               <span className="text-accent">Caio Mizuno</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Futuro Techlead com foco em
-              desenvolvimento{" "}
-              <span className="text-secondary text-xl uppercase">web</span> e{" "}
-              <span className="text-secondary text-xl uppercase">mobile</span>,
-              com experiência prática com várias tecnologias e linguagens de
-              programação.
+              Lidero squads e arquiteto aplicações{" "}
+              <span className="text-secondary-light text-xl uppercase">web</span>{" "}
+              em PHP e Node, com foco em pagamentos, segurança e sistemas
+              escaláveis. Hoje construo SaaS de ponta a ponta com um fluxo de
+              desenvolvimento assistido por{" "}
+              <Link
+                href="/ia"
+                className="text-secondary-light text-xl uppercase hover:text-accent transition-all"
+              >
+                IA
+              </Link>
+              .
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button

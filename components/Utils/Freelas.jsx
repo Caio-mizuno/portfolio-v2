@@ -1,7 +1,7 @@
 const freela = {
   icon: "/assets/resume/badge.svg",
   title: "Freelances",
-  description: "Acompanhe minha jornada no mundo do trabalho freelance. Ao longo dos anos, tive a oportunidade de colaborar com diversos profissionais autônomos em diferentes projetos. Nesta seção, compartilho minhas experiências, desde a escolha dos melhores talentos até a construção de relações de trabalho duradouras e produtivas.",
+  description: "Projetos que desenvolvi como freelancer, de sistemas de gestão para saúde e educação a automações sob medida.",
   items: [
     {
       project: "Hermes",
@@ -23,7 +23,6 @@ const freela = {
       project: "Sistema educacional - PRODAM",
       description: "Sistema de gestão na área da educação com o foco no controle de alunos, professores e turmas do estado do Amazonas. (Innyx)",
     },
-    ,
     {
       project: "Automação de Propagandas",
       description: "Script criado com python para automatizar as propagandas em um estabelecimento.",

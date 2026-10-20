@@ -40,8 +40,16 @@
 
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-primary bg-primary text-white leading-loose;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-primary rounded-md;
   }
 
   .h1{

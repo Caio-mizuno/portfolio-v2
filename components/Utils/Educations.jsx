@@ -1,12 +1,42 @@
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "Formação Acadêmica",
-  description: "Minhas formações e certificações",
+  title: "Formação e certificações",
+  description: "Graduação, MBA, cursos e certificações, das mais recentes às mais antigas.",
   items: [
+    {
+      institution: "Anthropic",
+      degree: "Claude Code 101",
+      duration: "2026",
+      href: "https://verify.skilljar.com/c/s3ytmpizhdgu",
+    },
+    {
+      institution: "Anthropic",
+      degree: "Claude 101",
+      duration: "2026",
+      href: "https://verify.skilljar.com/c/zxshke6q9g7e",
+    },
+    {
+      institution: "Mercado Pago Developers",
+      degree: "Checkout Pro",
+      duration: "2026",
+      href: "",
+    },
+    {
+      institution: "FullCycle",
+      degree: "Tech Week - IA for Devs",
+      duration: "2026",
+      href: "",
+    },
     {
       institution: "FullCycle",
       degree: "MBA - Arquitetura de Software",
       duration: "2023 - 2025",
+      href: "",
+    },
+    {
+      institution: "Even3",
+      degree: "Mesa Redonda (convidado) - Semana Integrada da Computação",
+      duration: "2024",
       href: "",
     },
     {
@@ -108,6 +138,18 @@ const education = {
     {
       institution: "TIMTech - Instituto TIM",
       degree: "Curso básico - UX/UI Design",
+      duration: "2021",
+      href: "",
+    },
+    {
+      institution: "Awari",
+      degree: "Curso introdutório de UX Design",
+      duration: "2021",
+      href: "",
+    },
+    {
+      institution: "UX Unicórnio",
+      degree: "Imersão em UX/UI",
       duration: "2021",
       href: "",
     },

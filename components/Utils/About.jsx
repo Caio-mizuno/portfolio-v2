@@ -6,7 +6,7 @@ import { PiUserSoundLight } from "react-icons/pi";
 
 const about = {
   title: "Sobre mim",
-  description: "Desenvolvedor experiente e apaixonado por UX, buscando criar soluções inovadoras que atendam às necessidades dos usuários. Lidero equipes, adoro desafios e gosto de novas experiências profissionais.",
+  description: "Squad Leader e Software Engineer apaixonado por UX e arquitetura. Lidero equipes, destravo impedimentos do time e hoje uso IA no dia a dia para entregar produtos completos com qualidade e testes. Adoro desafios e novas experiências profissionais.",
   info: [
     {
       fieldName: "Nome",

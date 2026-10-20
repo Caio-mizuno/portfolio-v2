@@ -107,14 +107,24 @@ const codeigniter = {
 };
 const projects = [
   {
+    title: "EzChat",
+    category: "Fullstack",
+    image: "/assets/work/ezchat.jpg",
+    position: "Desenvolvedor Full Stack",
+    href: "https://ezchatbot.ai/",
+    description:
+      "Plataforma de atendimento automatizado com foco em IA, integrada ao WhatsApp e a outros canais numa única caixa de entrada. Desenvolvo automações modulares para os fluxos de atendimento.",
+    stack: [next, laravel],
+  },
+  {
     title: "Libercard",
     category: "Backend",
     image: "/assets/work/libercard.png",
     position: "Squad Leader",
     href: "https://play.google.com/store/apps/details?id=br.com.libercard.libercard&hl=pt",
     description:
-      "Aplicativo para os usuários dos cartões Libercard realizarem transações financeira, como pagamento de contas, recarga de celular e muito mais.",
-    stack: [],
+      "Aplicativo para os usuários dos cartões Libercard realizarem transações financeiras, como pagamento de contas, recarga de celular e muito mais.",
+    stack: [laravel, docker, oracle],
   },
   {
     category: "Backend",
@@ -123,14 +133,14 @@ const projects = [
     href: "https://play.google.com/store/apps/details?id=br.com.libercard.vt&hl=pt",
     position: "Squad Leader",
     description:
-      "Aplicativo destinado à compra de créditos de transporte para os usuários de Fortaleza/CE e região metropolitana. ",
-    stack: [],
+      "Aplicativo destinado à compra de créditos de transporte para os usuários de Fortaleza/CE e região metropolitana.",
+    stack: [laravel, docker, oracle],
   },
   {
     category: "Fullstack",
     title: "Samulife",
     image: "/assets/work/samulife.png",
-    href: "https://play.google.com/store/apps/details?id=br.com.libercard.vt&hl=pt",
+    href: "",
     position: "Software Engineer",
     description:
       "Sistema de gestão na área da saúde com o foco no auxílio do controle de pacientes nos ambientes hospitalares. O sistema tem módulo de atendimento, prontuário, prescrição, evolução, exames, agendamento, relatórios e controle de estoque.",
@@ -143,7 +153,7 @@ const projects = [
     href: "https://www.swing360.com.br/",
     position: "Software Developer Jr.",
     description:
-      "Sistema de redes social focado na interação de casais liberais. O foco era auxiliar na comunicação e encontros entre casais, tendo um sistema de pontos e moedas virtuais que permitiam acessar funcionalidades premium.",
+      "Rede social focado na interação de casais liberais. O foco era auxiliar na comunicação e encontros entre casais, tendo um sistema de pontos e moedas virtuais que permitiam acessar funcionalidades premium.",
     stack: [laravel, vue, mysql],
   },
   {
@@ -173,7 +183,7 @@ const projects = [
     href: "https://festival.dourados.ms.gov.br/",
     position: "Estagiário",
     description:
-      "Website feito em wordpress com o intuito de divulgar o festival gastronômico da cidade de Dourados, MS. Site feito para ajudar a prefeitura de Dourados na época que era um estagiário",
+      "Website feito em wordpress com o intuito de divulgar o festival gastronômico da cidade de Dourados, MS. Site feito para ajudar a prefeitura de Dourados na época em que eu era estagiário",
     stack: [wordpress, php],
   },
   {
@@ -183,7 +193,7 @@ const projects = [
     href: "https://cultura.dourados.ms.gov.br/index.php?class=CulturaViewNew",
     position: "Estagiário",
     description:
-      "Site construido em prol de ajudar a prefeitura de Dourados, MS a divulgar informações sobre a cidade e seus serviços",
+      "Site construído em prol de ajudar a prefeitura de Dourados, MS a divulgar informações sobre a cidade e seus serviços",
     stack: [js, html, css],
   },
   {
@@ -193,7 +203,7 @@ const projects = [
     position: "",
     title: "SalvaTempo",
     description:
-      "Site construido para colocar em prática os conceitos de html, css e js. Um projeto pessoal para ajudar a população a se organizar e economizar tempo.",
+      "Site construído para colocar em prática os conceitos de html, css e js. Um projeto pessoal para ajudar a população a se organizar e economizar tempo.",
     stack: [js, html, css],
   },
   {
@@ -203,7 +213,7 @@ const projects = [
     position: "",
     title: "Portfólio - v1",
     description:
-      "Site construido para fazer meu marketing pessoal e colocar em prática os conceitos de html, css e js.",
+      "Site construído para fazer meu marketing pessoal e colocar em prática os conceitos de html, css e js.",
     stack: [js, html, css],
   },
 ];

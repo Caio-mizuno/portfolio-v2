@@ -1,16 +1,19 @@
 "use client";
 
 import CountUp from "react-countup";
+import projects from "@/components/Utils/Projects";
+import aiProjects from "@/components/Utils/AiProjects";
+import skills from "@/components/Utils/Skills";
+import services from "@/components/Utils/Services";
 
 const stats = [
   { number: new Date().getFullYear() - 2021, text: "Anos de experiência" },
-  { number: 9, text: "Projetos completos" },
-  // nest,next,laravel,vue,uipath,mysql,oracledb,postgresql,codeigniter,powerBi,python
-  { number: 13, text: "Tecnologias" },
-  // front-end, back-end, automação, BI, UX/UI, arquitetura
-  { number: 6, text: "Diversidade de atuações" },
-  // rede social, e-commerce, dashboard, app de mobilidade, app de crédito, app de saúde, app de gestão de ponto, sistema de antecipações, app de recarga de onibus
-  { number: 9, text: "Tipos de aplicações" },
+  { number: projects.length + aiProjects.length, text: "Projetos completos" },
+  { number: skills.items.length, text: "Tecnologias" },
+  { number: services.length, text: "Diversidade de atuações" },
+  // rede social, e-commerce, dashboard, app de mobilidade, app de crédito, app de saúde, app de gestão de ponto, sistema de antecipações, app de recarga de onibus,
+  // venda de ingressos, gestão de negócios de serviço, geração de vídeos com IA
+  { number: 12, text: "Tipos de aplicações" },
 ];
 
 const Stats = () => {
@@ -27,12 +30,12 @@ const Stats = () => {
                 <CountUp
                   end={item.number}
                   duration={5}
-                  delay={2}
+                  delay={1}
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
                 <p
                   className={`${
-                    item.text.lenght < 15 ? "max-w-[100px]" : "max-w-[150px]"
+                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
                   } leading-snug text-white/80`}
                 >
                   {item.text}

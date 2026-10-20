@@ -5,14 +5,17 @@ import { SlSocialBehance } from "react-icons/sl";
 const socials = [
   {
     icon: <FaGithub />,
+    name: "GitHub",
     path: "https://github.com/Caio-mizuno",
   },
   {
     icon: <FaLinkedin />,
+    name: "LinkedIn",
     path: "https://www.linkedin.com/in/caio-mizuno/",
   },
   {
     icon: <SlSocialBehance />,
+    name: "Behance",
     path: "https://www.behance.net/CaioVAMizuno",
   },
 ];
@@ -22,7 +25,14 @@ const Social = ({ containerStyles, iconStyles }) => {
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className={iconStyles}>
+          <Link
+            key={index}
+            href={item.path}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={item.name}
+            className={iconStyles}
+          >
             {item.icon}
           </Link>
         );
@@ -31,4 +41,5 @@ const Social = ({ containerStyles, iconStyles }) => {
   );
 };
 
+export { socials };
 export default Social;

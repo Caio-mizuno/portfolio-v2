@@ -16,7 +16,7 @@ const Header = () => {
             <AspectRatio ratio={16 / 9}>
               <Image
                 src="/images/logo.png"
-                alt="Image"
+                alt="Logo Mizuno.Tech"
                 className="rounded-md object-cover"
                 width="350"
                 height="350"
@@ -25,8 +25,8 @@ const Header = () => {
             </AspectRatio>
           </div>
           <div className="w-[100px] h-[100px] inline-flex justify-between items-center">
-            <Link href="/">
-              <h1 className="text-4xl font-semibold ">Mizuno</h1>
+            <Link href="/" aria-label="Mizuno.Tech, página inicial">
+              <span className="block text-4xl font-semibold">Mizuno</span>
               <span className="text-accent">.Tech</span>
             </Link>
           </div>
@@ -35,9 +35,9 @@ const Header = () => {
         {/* desktop nav*/}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          {/* <Link href="/contact"> */}
-            {/* <Button >Hire me</Button> */}
-          {/* </Link> */}
+          <Link href="/contact">
+            <Button>Fale comigo</Button>
+          </Link>
         </div>
         {/* mobile nav */}
         <div className="xl:hidden">

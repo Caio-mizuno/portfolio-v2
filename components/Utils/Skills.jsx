@@ -7,6 +7,8 @@ import {
   FaWordpress,
   FaJs,
   FaHtml5,
+  FaReact,
+  FaGitAlt,
 } from "react-icons/fa";
 import {
   SiNestjs,
@@ -14,6 +16,11 @@ import {
   SiUipath,
   SiMysql,
   SiPostgresql,
+  SiTypescript,
+  SiTailwindcss,
+  SiRedis,
+  SiAnthropic,
+  SiPowerbi,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { GrOracle } from "react-icons/gr";
@@ -101,6 +108,41 @@ const css = {
   name: "Css",
 };
 
+const react = {
+  icon: <FaReact />,
+  name: "React",
+};
+
+const typescript = {
+  icon: <SiTypescript />,
+  name: "TypeScript",
+};
+
+const tailwind = {
+  icon: <SiTailwindcss />,
+  name: "Tailwind CSS",
+};
+
+const redis = {
+  icon: <SiRedis />,
+  name: "Redis",
+};
+
+const git = {
+  icon: <FaGitAlt />,
+  name: "Git",
+};
+
+const claude = {
+  icon: <SiAnthropic />,
+  name: "Claude Code",
+};
+
+const powerbi = {
+  icon: <SiPowerbi />,
+  name: "Power BI",
+};
+
 const skills = {
   icon: "/assets/resume/cap.svg",
   title: "Habilidades técnicas",
@@ -108,15 +150,22 @@ const skills = {
   items: [
     docker,
     laravel,
+    php,
     vue,
     next,
+    react,
+    typescript,
+    tailwind,
     nest,
-    php,
     python,
-    uipath,
-    oracle,
-    mysql,
+    claude,
+    redis,
+    git,
     postgresql,
+    mysql,
+    oracle,
+    uipath,
+    powerbi,
     wordpress,
     figma,
   ],
