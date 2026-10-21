@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import legal from "@/components/Utils/Legal";
 
 const Section = ({ section }) => (
@@ -29,11 +28,7 @@ const LegalDocument = ({ initialLang = "pt" }) => {
 
   return (
     <section className="min-h-[70vh] py-12 xl:py-16">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { delay: 0.4, duration: 0.4, ease: "easeIn" } }}
-        className="container mx-auto max-w-3xl"
-      >
+      <div className="page-enter [--enter-delay:0.4s] container mx-auto max-w-3xl">
         {/* Header */}
         <div className="flex items-start justify-between gap-4 mb-2">
           <h1 className="text-3xl xl:text-4xl font-semibold text-white leading-tight">
@@ -92,7 +87,7 @@ const LegalDocument = ({ initialLang = "pt" }) => {
           </a>
           .
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

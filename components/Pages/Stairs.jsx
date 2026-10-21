@@ -1,39 +1,22 @@
-import { AnimatePresence, motion } from "framer-motion";
-
-const stairAnimation = {
-  initial: {
-    top: "0%",
-  },
-  animate: {
-    top: "100%",
-  },
-  exit: {
-    top: ["100%", "0%"],
-  },
-};
+// Cada degrau nasce cobrindo a tela e desce até sair dela (classe
+// .transition-stair em globals.css); o atraso cria o efeito de escada.
+const totalSteps = 6;
 
 const reverseIndex = (index) => {
-  const totalSteps = 6;
   return totalSteps - index - 1;
 };
 
 const Stairs = () => {
   return (
     <>
-      {[...Array(6)].map((_, index) => {
-       return  <motion.div
-          key={index}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          variants={stairAnimation}
-          transition={{
-            duration: 0.4,
-            ease: "easeInOut",
-            delay: reverseIndex(index) * 0.1,
-          }}
-          className="h-full w-full gradient-1 relative"
-        ></motion.div>;
+      {[...Array(totalSteps)].map((_, index) => {
+        return (
+          <div
+            key={index}
+            style={{ animationDelay: `${reverseIndex(index) * 0.06}s` }}
+            className="h-full w-full gradient-1 relative transition-stair"
+          ></div>
+        );
       })}
     </>
   );

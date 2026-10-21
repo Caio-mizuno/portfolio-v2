@@ -1,22 +1,12 @@
-"use client";
-
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import services from "@/components/Utils/Services";
-import { motion } from "framer-motion";
 
 const Services = () => {
   return (
     <section className="min-h-[70vh] flex flex-col justify-center py-12 xl:py-0 xl:pb-24">
       <div className="container mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 1.2, duration: 0.4, ease: "easeIn" },
-          }}
-          className="flex flex-col gap-16"
-        >
+        <div className="page-enter flex flex-col gap-16">
           <div className="flex flex-col gap-4 text-center xl:text-left">
             <span className="text-accent uppercase tracking-widest text-sm">
               O que eu faço
@@ -76,7 +66,7 @@ const Services = () => {
               );
             })}
           </ul>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

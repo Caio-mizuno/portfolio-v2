@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import { BsArrowUpRight } from "react-icons/bs";
@@ -38,14 +35,7 @@ const channels = [
 const Contact = () => {
   return (
     <section className="min-h-[70vh] flex flex-col justify-center py-12 xl:py-0 xl:pb-24">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 1.2, duration: 0.4, ease: "easeIn" },
-        }}
-        className="container mx-auto grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] gap-12 xl:gap-[80px] items-start"
-      >
+      <div className="page-enter container mx-auto grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] gap-12 xl:gap-[80px] items-start">
         <div className="flex flex-col gap-6 text-center xl:text-left">
           <span className="text-accent uppercase tracking-widest text-sm">
             Contato
@@ -88,7 +78,7 @@ const Contact = () => {
             );
           })}
         </ul>
-      </motion.div>
+      </div>
     </section>
   );
 };

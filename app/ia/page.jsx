@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import aiWorkflow from "@/components/Utils/AiWorkflow";
 import aiProjects from "@/components/Utils/AiProjects";
@@ -8,14 +5,7 @@ import aiRag from "@/components/Utils/AiRag";
 
 const Ia = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 1.2, duration: 0.4, ease: "easeIn" },
-      }}
-      className="min-h-[80vh] py-12 xl:py-0 xl:pb-24"
-    >
+    <div className="page-enter min-h-[80vh] py-12 xl:py-0 xl:pb-24">
       <div className="container mx-auto flex flex-col gap-[80px]">
         <section className="flex flex-col gap-10">
           <div className="flex flex-col gap-6 max-w-[860px] text-center xl:text-left mx-auto xl:mx-0">
@@ -231,7 +221,7 @@ const Ia = () => {
           </ul>
         </section>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
