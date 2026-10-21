@@ -3,8 +3,10 @@
 import Photo from "@/components/Pages/Photo";
 import Social from "@/components/Pages/Social";
 import Stats from "@/components/Pages/Stats";
+import HomeAi from "@/components/Pages/HomeAi";
 import { Button } from "@/components/Ui/button";
-import { FiDownload } from "react-icons/fi";
+import { FiDownload, FiArrowDown } from "react-icons/fi";
+import { Sparkles } from "lucide-react";
 // Variables
 import Link from "next/link";
 const idiome = process.env.REACT_APP_IDIOME;
@@ -28,7 +30,15 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:py-8 xl:pb-24">
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Squad Leader · Software Engineer</span>
+            <a
+              href="#ia-no-dia-a-dia"
+              className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full border border-white/15 text-xs text-white/70 hover:border-accent hover:text-accent transition-all"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-accent" />
+              Minha doc de IA e os SaaS que construí com ela
+              <FiArrowDown />
+            </a>
+            <span className="block text-xl">Squad Leader · Software Engineer</span>
             <h1 className="h1">
               {title}
               <br />
@@ -73,6 +83,7 @@ const Home = () => {
         </div>
       </div>
       <Stats />
+      <HomeAi />
     </section>
   );
 };

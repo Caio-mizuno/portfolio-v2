@@ -3,7 +3,9 @@ import { Ticket, Wallet, Clapperboard } from "lucide-react";
 const aiProjects = [
   {
     title: "EtiqNova",
+    slug: "etiqnova",
     category: "Ingressos e parques",
+    summary: "Ingressos, PDV e validação por QR Code para parques, com chat de IA (RAG).",
     status: "MVP concluído",
     icon: <Ticket />,
     preview: {
@@ -40,7 +42,9 @@ const aiProjects = [
   },
   {
     title: "PropenCash",
+    slug: "propencash",
     category: "Gestão para negócios de serviço",
+    summary: "Agenda, financeiro e cobrança online para barbearias e salões.",
     status: "MVP em evolução",
     icon: <Wallet />,
     preview: {
@@ -74,7 +78,9 @@ const aiProjects = [
   },
   {
     title: "PostAuto",
+    slug: "postauto",
     category: "Vídeos com IA",
+    summary: "Vídeos gerados por IA e publicados no YouTube, Instagram e TikTok.",
     status: "MVP",
     icon: <Clapperboard />,
     preview: {

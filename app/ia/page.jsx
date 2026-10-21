@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import aiWorkflow from "@/components/Utils/AiWorkflow";
 import aiProjects from "@/components/Utils/AiProjects";
+import aiRag from "@/components/Utils/AiRag";
 
 const Ia = () => {
   return (
@@ -50,6 +51,75 @@ const Ia = () => {
           </ul>
         </section>
 
+        <section
+          id="motor-rag"
+          className="scroll-mt-8 bg-[#232329] rounded-2xl p-6 md:p-8 xl:p-12 grid grid-cols-1 xl:grid-cols-[1.1fr_1fr] gap-10 xl:gap-16"
+        >
+          <div className="flex flex-col gap-6 text-center xl:text-left">
+            <span className="text-accent uppercase tracking-widest text-sm">
+              {aiRag.eyebrow}
+            </span>
+            <h2 className="h2 text-balance">{aiRag.title}</h2>
+            <p className="text-white/60 text-pretty">{aiRag.description}</p>
+            <ul className="flex flex-col gap-3 text-left">
+              {aiRag.notes.map((note, index) => {
+                return (
+                  <li
+                    key={index}
+                    className="text-white/70 text-sm grid grid-cols-[20px_1fr]"
+                  >
+                    <span className="w-[6px] h-[6px] rounded-full bg-accent mt-[10px]"></span>
+                    <span>{note}</span>
+                  </li>
+                );
+              })}
+            </ul>
+            <ul className="flex flex-wrap justify-center xl:justify-start gap-2">
+              {aiRag.stack.map((tech) => {
+                return (
+                  <li
+                    key={tech}
+                    className="px-3 py-1 rounded-md bg-primary text-white/80 text-xs"
+                  >
+                    {tech}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          <ol
+            aria-label="Como o motor responde"
+            className="flex flex-col gap-4 self-center"
+          >
+            {aiRag.steps.map((step, index) => {
+              const isLast = index === aiRag.steps.length - 1;
+              return (
+                <li
+                  key={index}
+                  className="relative grid grid-cols-[56px_1fr] gap-4 items-start"
+                >
+                  {!isLast && (
+                    <span className="absolute left-[27px] top-14 -bottom-4 w-px bg-white/15"></span>
+                  )}
+                  <span className="relative w-14 h-14 rounded-full bg-primary border border-white/10 text-accent flex justify-center items-center [&>svg]:w-6 [&>svg]:h-6">
+                    {step.icon}
+                  </span>
+                  <div className="bg-primary rounded-xl p-5 flex flex-col gap-1">
+                    <span className="text-white/30 text-xs tabular-nums">
+                      Etapa {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-lg font-bold leading-snug">
+                      {step.title}
+                    </h3>
+                    <p className="text-white/60 text-sm">{step.description}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+
         <section className="flex flex-col gap-10">
           <div className="flex flex-col gap-4 text-center xl:text-left">
             <h2 className="h2">Projetos SaaS</h2>
@@ -64,7 +134,8 @@ const Ia = () => {
               return (
                 <li
                   key={index}
-                  className="bg-[#232329] rounded-2xl p-6 md:p-8 xl:p-12 grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-14 items-center"
+                  id={project.slug}
+                  className="scroll-mt-8 bg-[#232329] rounded-2xl p-6 md:p-8 xl:p-12 grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-14 items-center"
                 >
                   <div
                     className={`flex flex-col gap-6 ${
