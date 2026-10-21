@@ -35,7 +35,7 @@ const channels = [
 const Contact = () => {
   return (
     <section className="min-h-[70vh] flex flex-col justify-center py-12 xl:py-0 xl:pb-24">
-      <div className="page-enter container mx-auto grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] gap-12 xl:gap-[80px] items-start">
+      <div className="container mx-auto grid grid-cols-1 xl:grid-cols-[1fr_1.2fr] gap-12 xl:gap-[80px] items-start">
         <div className="flex flex-col gap-6 text-center xl:text-left">
           <span className="text-accent uppercase tracking-widest text-sm">
             Contato
@@ -61,7 +61,7 @@ const Contact = () => {
                   href={channel.href}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
-                  className="group bg-[#232329] rounded-xl p-6 flex items-center gap-4 hover:bg-[#2a2a31] transition-all duration-300"
+                  className="spotlight group bg-[#232329] rounded-xl p-6 flex items-center gap-4 hover:bg-[#2a2a31] transition-all duration-300"
                 >
                   <span className="w-12 h-12 shrink-0 rounded-full bg-primary flex justify-center items-center text-accent text-xl">
                     {channel.icon}

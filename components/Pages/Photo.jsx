@@ -3,14 +3,14 @@ import Image from "next/image";
 const Photo = () => {
   return (
     <div className="w-full h-full relative">
-      <div className="page-enter [--enter-delay:0.5s]">
+      <div>
         {/* image */}
-        <div className="page-enter [--enter-delay:0.6s] w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+        <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
           <Image
             src="/assets/profile2.png"
             alt="Foto de Caio Mizuno"
             sizes="(max-width: 1200px) 298px, 498px"
-            quality={90}
+            quality={80}
             priority
             fill
             className="object-contain"

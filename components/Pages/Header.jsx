@@ -18,8 +18,8 @@ const Header = () => {
                 src="/images/logo.png"
                 alt="Logo Mizuno.Tech"
                 className="rounded-md object-cover"
-                width="350"
-                height="350"
+                width="220"
+                height="220"
                 priority
               />
             </AspectRatio>

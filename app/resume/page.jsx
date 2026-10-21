@@ -1,5 +1,3 @@
-"use client";
-
 import Educations from "@/components/Pages/Resume/Educations";
 import About from "@/components/Pages/Resume/About";
 import Experiences from "@/components/Pages/Resume/Experiences";
@@ -10,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/Ui/tabs";
 
 const Resume = () => {
   return (
-    <div className="page-enter min-h-[80vh] py-12 xl:py-0 xl:pb-24">
+    <div className="min-h-[80vh] py-12 xl:py-0 xl:pb-24">
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"

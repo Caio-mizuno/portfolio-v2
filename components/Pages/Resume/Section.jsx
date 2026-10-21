@@ -1,7 +1,7 @@
 // Base visual comum às abas do currículo: mesmo cabeçalho e mesmo card,
 // sempre alinhados ao topo, na ordem meta → título → subtítulo → corpo.
 export const cardStyles =
-  "bg-[#232329] rounded-xl p-6 flex flex-col gap-3 text-left transition-colors duration-300";
+  "spotlight bg-[#232329] rounded-xl p-6 flex flex-col gap-3 text-left transition-colors duration-300";
 
 const Section = ({ title, description, children }) => {
   return (

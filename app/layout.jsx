@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Pages/Header";
 import StairTransition from "@/components/Pages/StairTransition";
 import Footer from "@/components/Pages/Footer";
+import Spotlight from "@/components/Pages/Spotlight";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -24,7 +25,9 @@ export const metadata = {
     siteName: "Mizuno.Tech",
     locale: "pt_BR",
     type: "website",
-    images: [{ url: "/assets/photo.png", alt: "Caio Mizuno" }],
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 
@@ -43,6 +46,7 @@ export default function RootLayout({ children }) {
           <StairTransition />
           <main id="conteudo">{children}</main>
           <Footer />
+          <Spotlight />
         </div>
       </body>
     </html>

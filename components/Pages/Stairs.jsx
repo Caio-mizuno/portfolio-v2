@@ -13,7 +13,7 @@ const Stairs = () => {
         return (
           <div
             key={index}
-            style={{ animationDelay: `${reverseIndex(index) * 0.06}s` }}
+            style={{ animationDelay: `${reverseIndex(index) * 0.05}s` }}
             className="h-full w-full gradient-1 relative transition-stair"
           ></div>
         );

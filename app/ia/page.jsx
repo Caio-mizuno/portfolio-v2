@@ -5,7 +5,7 @@ import aiRag from "@/components/Utils/AiRag";
 
 const Ia = () => {
   return (
-    <div className="page-enter min-h-[80vh] py-12 xl:py-0 xl:pb-24">
+    <div className="min-h-[80vh] py-12 xl:py-0 xl:pb-24">
       <div className="container mx-auto flex flex-col gap-[80px]">
         <section className="flex flex-col gap-10">
           <div className="flex flex-col gap-6 max-w-[860px] text-center xl:text-left mx-auto xl:mx-0">
@@ -21,7 +21,7 @@ const Ia = () => {
               return (
                 <li
                   key={index}
-                  className="group bg-[#232329] rounded-xl p-8 flex flex-col gap-4 hover:shadow-xl transition-all duration-500"
+                  className="spotlight group bg-[#232329] rounded-xl p-8 flex flex-col gap-4 hover:shadow-xl transition-all duration-500"
                 >
                   <div className="flex justify-between items-center">
                     <span className="text-4xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
@@ -43,7 +43,7 @@ const Ia = () => {
 
         <section
           id="motor-rag"
-          className="scroll-mt-8 bg-[#232329] rounded-2xl p-6 md:p-8 xl:p-12 grid grid-cols-1 xl:grid-cols-[1.1fr_1fr] gap-10 xl:gap-16"
+          className="spotlight scroll-mt-8 bg-[#232329] rounded-2xl p-6 md:p-8 xl:p-12 grid grid-cols-1 xl:grid-cols-[1.1fr_1fr] gap-10 xl:gap-16"
         >
           <div className="flex flex-col gap-6 text-center xl:text-left">
             <span className="text-accent uppercase tracking-widest text-sm">
@@ -125,7 +125,7 @@ const Ia = () => {
                 <li
                   key={index}
                   id={project.slug}
-                  className="scroll-mt-8 bg-[#232329] rounded-2xl p-6 md:p-8 xl:p-12 grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-14 items-center"
+                  className="spotlight scroll-mt-8 bg-[#232329] rounded-2xl p-6 md:p-8 xl:p-12 grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-14 items-center"
                 >
                   <div
                     className={`flex flex-col gap-6 ${

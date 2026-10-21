@@ -1,9 +1,8 @@
-"use client";
-
 import Photo from "@/components/Pages/Photo";
 import Social from "@/components/Pages/Social";
 import Stats from "@/components/Pages/Stats";
 import HomeAi from "@/components/Pages/HomeAi";
+import InkHeadline from "@/components/Ui/ink-headline";
 import { Button } from "@/components/Ui/button";
 import { FiDownload, FiArrowDown } from "react-icons/fi";
 import { Sparkles } from "lucide-react";
@@ -15,15 +14,6 @@ const downloadButton =
   idiome === "pt" || !idiome ? " Baixar currículo " : " Download resume ";
 
 const Home = () => {
-  const handleDownloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/Resume.pdf';
-    link.download = 'Caio_Mizuno_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -39,10 +29,14 @@ const Home = () => {
               <FiArrowDown />
             </a>
             <span className="block text-xl">Squad Leader · Software Engineer</span>
+            {/* Cada linha entra em tinta separada para manter as duas cores; o atraso espera a transição de página. */}
             <h1 className="h1">
-              {title}
-              <br />
-              <span className="text-accent">Caio Mizuno</span>
+              <InkHeadline as="span" className="block" duration={1200} stagger={160} delay={300}>
+                {title}
+              </InkHeadline>
+              <InkHeadline as="span" className="block text-accent" duration={1200} stagger={160} delay={850}>
+                Caio Mizuno
+              </InkHeadline>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               Lidero squads e arquiteto aplicações{" "}
@@ -60,13 +54,15 @@ const Home = () => {
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
-                onClick={handleDownloadResume}
               >
-                <span>{downloadButton}</span>
-                <FiDownload className="text-xl" />
+                <a href="/Resume.pdf" download="Caio_Mizuno_Resume.pdf">
+                  <span>{downloadButton}</span>
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social

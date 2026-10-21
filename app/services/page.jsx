@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section className="min-h-[70vh] flex flex-col justify-center py-12 xl:py-0 xl:pb-24">
       <div className="container mx-auto">
-        <div className="page-enter flex flex-col gap-16">
+        <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-4 text-center xl:text-left">
             <span className="text-accent uppercase tracking-widest text-sm">
               O que eu faço

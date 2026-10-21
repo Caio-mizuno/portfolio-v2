@@ -20,6 +20,8 @@ const categories = [ALL, ...new Set(projects.map((item) => item.category))];
 
 const Work = () => {
   const [category, setCategory] = useState(ALL);
+  // Os cards só animam ao trocar o filtro; no carregamento aparecem direto.
+  const [hasFiltered, setHasFiltered] = useState(false);
 
   const visibleProjects = projects
     .map((project, index) => ({ ...project, num: index + 1 }))
@@ -31,7 +33,7 @@ const Work = () => {
       : projects.filter((project) => project.category === name).length;
 
   return (
-    <div className="page-enter py-12 xl:py-0 xl:pb-24">
+    <div className="py-12 xl:py-0 xl:pb-24">
       <div className="container mx-auto flex flex-col gap-10">
         <div className="flex flex-col xl:flex-row xl:items-end justify-between gap-8">
           <div className="flex flex-col gap-4 text-center xl:text-left">
@@ -58,7 +60,10 @@ const Work = () => {
                   type="button"
                   role="tab"
                   aria-selected={isActive}
-                  onClick={() => setCategory(name)}
+                  onClick={() => {
+                    setCategory(name);
+                    setHasFiltered(true);
+                  }}
                   className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${
                     isActive
                       ? "bg-accent text-primary font-semibold"
@@ -89,8 +94,12 @@ const Work = () => {
               return (
                 <li
                   key={project.title}
-                  style={{ "--enter-delay": `${index * 0.04}s` }}
-                  className="card-enter group bg-[#232329] rounded-xl overflow-hidden flex flex-col"
+                  style={
+                    hasFiltered
+                      ? { "--enter-delay": `${index * 0.04}s` }
+                      : undefined
+                  }
+                  className={`spotlight ${hasFiltered ? "card-enter " : ""}group bg-[#232329] rounded-xl overflow-hidden flex flex-col`}
                 >
                   <div className="relative aspect-[16/10] overflow-hidden bg-primary">
                     <Image
@@ -99,6 +108,7 @@ const Work = () => {
                       fill
                       className="object-cover object-top group-hover:scale-[1.04] transition-transform duration-700"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={index < 3}
                     />
                     <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/70 backdrop-blur text-accent text-xs font-semibold">
                       {project.category}
@@ -168,7 +178,7 @@ const Work = () => {
 
         <Link
           href="/ia"
-          className="group bg-[#232329] rounded-xl p-6 xl:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#2a2a31] transition-all duration-300"
+          className="spotlight group bg-[#232329] rounded-xl p-6 xl:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#2a2a31] transition-all duration-300"
         >
           <div className="flex flex-col gap-1">
             <span className="text-accent uppercase tracking-widest text-xs">

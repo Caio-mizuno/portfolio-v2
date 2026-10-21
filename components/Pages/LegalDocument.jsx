@@ -28,7 +28,7 @@ const LegalDocument = ({ initialLang = "pt" }) => {
 
   return (
     <section className="min-h-[70vh] py-12 xl:py-16">
-      <div className="page-enter [--enter-delay:0.4s] container mx-auto max-w-3xl">
+      <div className="container mx-auto max-w-3xl">
         {/* Header */}
         <div className="flex items-start justify-between gap-4 mb-2">
           <h1 className="text-3xl xl:text-4xl font-semibold text-white leading-tight">

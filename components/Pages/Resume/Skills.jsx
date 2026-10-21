@@ -9,7 +9,7 @@ const Skills = () => {
           return (
             <li
               key={index}
-              className="group bg-[#232329] rounded-xl py-6 px-3 flex flex-col items-center justify-center gap-3 hover:bg-[#2a2a31] transition-colors duration-300"
+              className="spotlight group bg-[#232329] rounded-xl py-6 px-3 flex flex-col items-center justify-center gap-3 hover:bg-[#2a2a31] transition-colors duration-300"
             >
               <span className="text-4xl xl:text-5xl group-hover:text-accent transition-colors duration-300 filter-shadow">
                 {item.icon}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BsArrowUpRight } from "react-icons/bs";
 import aiDocs from "@/components/Utils/AiDocs";
 import aiProjects from "@/components/Utils/AiProjects";
+import InkHeadline from "@/components/Ui/ink-headline";
 
 const BrowserFrame = ({ image, label, alt, sizes }) => (
   <div className="rounded-xl overflow-hidden border border-white/10 bg-primary">
@@ -33,7 +34,9 @@ const HomeAi = () => {
             <span className="text-accent uppercase tracking-widest text-sm">
               Desenvolvimento com IA
             </span>
-            <h2 className="h2 text-balance">IA no meu dia a dia</h2>
+            <InkHeadline as="h2" className="h2 text-balance" duration={1200} stagger={160}>
+              IA no meu dia a dia
+            </InkHeadline>
             <p className="max-w-[620px] text-white/60 mx-auto xl:mx-0">
               Documentei o que aprendi usando o Claude Code e apliquei esse
               fluxo, com agentes, revisores e testes, em SaaS completos e num
@@ -54,7 +57,7 @@ const HomeAi = () => {
             href={aiDocs.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-[#232329] rounded-2xl p-6 md:p-8 flex flex-col gap-6 hover:bg-[#2a2a31] transition-all duration-300"
+            className="spotlight group bg-[#232329] rounded-2xl p-6 md:p-8 flex flex-col gap-6 hover:bg-[#2a2a31] transition-all duration-300"
           >
             <BrowserFrame
               image={aiDocs.image}
@@ -95,7 +98,7 @@ const HomeAi = () => {
                 <li key={project.slug} className="flex-1">
                   <Link
                     href={`/ia#${project.slug}`}
-                    className="group h-full bg-[#232329] rounded-2xl p-5 grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-5 items-center hover:bg-[#2a2a31] transition-all duration-300"
+                    className="spotlight group h-full bg-[#232329] rounded-2xl p-5 grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-5 items-center hover:bg-[#2a2a31] transition-all duration-300"
                   >
                     <BrowserFrame
                       image={project.preview.image}
