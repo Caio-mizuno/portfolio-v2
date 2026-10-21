@@ -1,53 +1,53 @@
 import experiences from "@/components/Utils/Experiences";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { cn } from "@/lib/utils";
+import Section, { cardStyles } from "./Section";
 
 const Experiences = () => {
   return (
-    <div className="flex flex-col gap-[30px] text-center xl:text-left">
-      <h3 className="text-4xl font-bold">{experiences.title}</h3>
-      <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-        {experiences.description}
-      </p>
-
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
-          {experiences.items.map((item, index) => {
-            return (
-              <li
-                key={index}
-                className="hover:scale-[105%] hover:shadow-xl bg-[#232329] h-auto py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-              >
-                <span className="text-accent">{item.duration}</span>
-                <h3 className="text-2xl max-w-[300px] min-h-[90px] text-center lg:text-left">
-                  {item.position}
-                </h3>
-                <div className="flex items-center gap-3">
-                  {/* {dot} */}
-                  <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                  <p className="text-white/60">{item.company}</p>
-                </div>
-                <div className="flex flex-col gap-2 w-90">
-                  {" "}
-                  {item.projects.map((project, index) => {
+    <Section title={experiences.title} description={experiences.description}>
+      <ol className="relative flex flex-col gap-6 border-l border-white/10 ml-1.5">
+        {experiences.items.map((item, index) => {
+          return (
+            <li key={index} className="relative pl-6 xl:pl-8">
+              <span
+                aria-hidden="true"
+                className="absolute -left-[7px] top-[38px] xl:top-[44px] w-3 h-3 rounded-full bg-accent ring-4 ring-primary"
+              ></span>
+              <article className={cn(cardStyles, "gap-5 xl:p-8")}>
+                <header className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                  <div className="flex flex-col gap-1">
+                    <h4 className="text-xl xl:text-2xl font-bold leading-tight">
+                      {item.position}
+                    </h4>
+                    <p className="text-secondary-light">{item.company}</p>
+                  </div>
+                  <span className="self-start shrink-0 px-3 py-1 rounded-full bg-primary text-accent text-xs tabular-nums">
+                    {item.duration}
+                  </span>
+                </header>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {item.projects.map((project, projectIndex) => {
                     return (
-                      <div
-                        key={index}
-                        className="w-full text-left text-pretty px-2 py-1 rounded-md text-[12px] ml-3"
+                      <li
+                        key={projectIndex}
+                        className="bg-primary rounded-lg px-4 py-3 flex flex-col gap-1"
                       >
-                        <h2 className="pt-2 ml-3 text-accent">
-                          {project.title} -
-                          <span className="ml-4 text-white/70">
-                            {project.description}
-                          </span>
-                        </h2>
-                      </div>
+                        <span className="text-sm font-semibold text-white">
+                          {project.title}
+                        </span>
+                        <span className="text-sm text-white/60 leading-snug">
+                          {project.description}
+                        </span>
+                      </li>
                     );
                   })}
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-    </div>
+                </ul>
+              </article>
+            </li>
+          );
+        })}
+      </ol>
+    </Section>
   );
 };
 export default Experiences;
